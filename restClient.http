@@ -1,0 +1,21 @@
+GET http://localhost:3030/messages/
+###
+
+POST http://localhost:3030/users/
+Content-Type: application/json
+
+{
+    "email": "feathers@example.com",
+    "password": "secret"
+}
+###
+
+POST http://localhost:3030/authentication/
+Content-Type: application/json
+
+{
+    "strategy": "local",
+    "email": "feathers@example.com",
+    "password": "secret"
+}
+###
